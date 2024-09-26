@@ -1,0 +1,52 @@
+/* General container styling */
+.stopwatch-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradient background */
+  transition: transform 0.8s ease-in-out; /* Smooth animation */
+}
+
+
+/* Stopwatch box styling */
+.stopwatch-box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  text-align: center;
+}
+
+/* Time display styling */
+.stopwatch-time {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 4rem;
+  color: #d90a0a;
+}
+
+/* Button styling */
+.btn {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 10px;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+
+
+/* Animations for moving the container */
+.move-top {
+  transform: translateY(-200px); /* Move the container up */
+}
+
+.move-middle {
+  transform: translateY(0); /* Keep the container in the middle */
+}
+
+.move-bottom {
+  transform: translateY(200px); /* Move the container down */
+}
